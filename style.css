@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    margin: 0 auto;
+}
+
+.grid{
+    width: 66rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.head{
+    font-size: 18px;
+    width: 30rem;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
+}
+
+.type-effect{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
+    color: rgb(236, 126, 47);
+}
+
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: grey;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%{
+        background-color: grey;
+    }
+    40%{
+        background-color: grey;
+    }
+    70%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        background-color: gray;
+    }
+}
+
+.stop-blink{
+    animation: none;
+}
+
+.img{
+    width: 30rem;
+}
+
+.img img{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 4px;
+}
+
+.btn{
+    padding: 0.7rem 5px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(210, 114, 45);
+    transition: all .1s ease;   
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+}
+
+.btn:hover{
+    border: 2px solid rgb(210, 114, 45);
+    background: transparent;    
+}
+
+a:hover{
+    color: rgb(210, 114, 45);
+}
